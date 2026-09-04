@@ -3,4 +3,4 @@ project(Buoi04)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Buoi04 main.cpp)
+add_executable(Buoi04 MergeSort.cpp)
