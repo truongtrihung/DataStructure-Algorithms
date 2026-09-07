@@ -3,7 +3,7 @@ using namespace std;
 
 #define MAX 100
 
-void nhapMang (int arr[], int l, int h);
+void nhapMang (int arr[], int &l, int &h);
 
 void inMang (int arr[], int l, int h);
 
@@ -11,24 +11,31 @@ void quickSort(int arr[], int l, int h);
 
 int partition(int arr[], int low, int high);
 
+void myswap(int &a, int &b);
+
 int main() {
     int arr[MAX];
     int l, h;
-    cin >> l >> h;
+    cout << "Nhap l: ";
+    cin >> l;
+    cout << "Nhap h: ";
+    cin >> h;
 
+    cout << "Nhap mang: ";
     nhapMang(arr, l, h);
+
+    cout << "Mang vua nhap la: ";
     inMang(arr, l, h);
 
     quickSort(arr, l, h);
     cout << "Mang sau khi sap xep la: ";
-
     inMang(arr, l, h);
 
     cout << endl;
     return 0;
 }
 
-void nhapMang (int arr[], int l, int h) {
+void nhapMang (int arr[], int &l, int &h) {
     for (int i = l; i <= h; i++) {
         cin >> arr[i];
     }
@@ -56,10 +63,16 @@ int partition (int arr[], int low, int high) {
     {
         if (arr[j] < pivot)
         {
-            swap(arr[i], arr[j]);
+            myswap(arr[i], arr[j]);
             i++;
         }
     }
-    swap(arr[i], arr[high]);
+    myswap(arr[i], arr[high]);
     return (i);
+}
+
+void myswap(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
 }

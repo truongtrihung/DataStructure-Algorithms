@@ -3,7 +3,7 @@ using namespace std;
 
 #define MAX 100
 
-void nhapMang(int arr[], int l, int r);
+void nhapMang(int arr[], int &l, int &r);
 
 void inMang(int arr[], int l, int r);
 
@@ -14,9 +14,15 @@ void merge(int arr[], int l, int m, int r);
 int main() {
     int arr[MAX];
     int l, r;
-    cin >> l >> r;
+    cout << "Nhap l: ";
+    cin >> l;
+    cout << "Nhap r: ";
+    cin >> r;
 
+    cout << "Nhap mang: ";
     nhapMang(arr, l, r);
+
+    cout << "Mang vua nhap la: ";
     inMang(arr, l, r);
 
     mergeSort(arr, l, r);
@@ -29,7 +35,7 @@ int main() {
     return 0;
 }
 
-void nhapMang(int arr[], int l, int r) {
+void nhapMang(int arr[], int &l, int &r) {
     for (int i = l; i <= r; i++) {
         cin >> arr[i];
     }
@@ -55,32 +61,38 @@ void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1, n2 = r - m;
 
-    int* L = new int[n1];
-    int* R = new int[n2];
+    int *L = new int[n1];
+    int *R = new int[n2];
 
     for (i = 0; i < n1; i++)
         L[i] = arr[l + i];
     for (j = 0; j < n2; j++)
         R[j] = arr[m + 1 + j];
-    i = 0; j = 0; k = l;
+    i = 0;
+    j = 0;
+    k = l;
 
     while (i < n1 && j < n2) {
         if (L[i] <= R[j]) {
-            arr[k] = L[i]; i++;
-        }
-        else {
-            arr[k] = R[j]; j++;
+            arr[k] = L[i];
+            i++;
+        } else {
+            arr[k] = R[j];
+            j++;
         }
         k++;
     }
     /*=============== */
     while (i < n1) {
-        arr[k] = L[i]; i++; k++;
+        arr[k] = L[i];
+        i++;
+        k++;
     }
     while (j < n2) {
-        arr[k] = R[j]; j++; k++;
+        arr[k] = R[j];
+        j++;
+        k++;
     }
     delete[] L;
     delete[] R;
 }
-

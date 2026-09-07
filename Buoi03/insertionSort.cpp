@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#define MAX 10
+#define MAX 100
 
 void nhapmang (int arr[], int &n);
 
@@ -11,10 +11,13 @@ void insertionSort(int arr[], int n);
 
 int main() {
     int n, arr[MAX];
-    cout << "Nhap n: " ;
+    cout << "Nhap so luong phan tu trong mang: " ;
     cin >> n;
 
+    cout << "Nhap mang: ";
     nhapmang(arr, n);
+
+    cout << "Mang sau khi nhap la: ";
     xuatmang(arr, n);
 
     insertionSort(arr, n);
