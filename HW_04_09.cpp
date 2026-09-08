@@ -1,8 +1,5 @@
 #include <iostream>
 #include <cstdio>
-#include <cstdlib>
-#include <ctime>
-
 using namespace std;
 
 #define MAX 1000
