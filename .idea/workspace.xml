@@ -56,9 +56,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="3IzU0ErbCoZGdsf75DnMXgBsAP1" />
-  <component name="ProjectStatusUIService"><![CDATA[{
-  "uiKindId": "Widget"
-}]]></component>
+  <component name="ProjectStatusUIService">{
+  &quot;uiKindId&quot;: &quot;Widget&quot;
+}</component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,6 +68,7 @@
     "C/C++ File.25AD11008.cpp.executor": "Run",
     "C/C++ File.HW_04_09.cpp.executor": "Run",
     "C/C++ File.linkedList01.cpp.executor": "Run",
+    "C/C++ File.linkedList02.cpp.executor": "Run",
     "C/C++ File.linkedlist.cpp.executor": "Run",
     "C/C++ File.main.cpp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -94,7 +95,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="C/C++ File.linkedList01.cpp">
+  <component name="RunManager" selected="C/C++ File.linkedList02.cpp">
     <configuration name="DataStructures_Algorithms" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="DataStructures_Algorithms" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures_Algorithms" RUN_TARGET_NAME="DataStructures_Algorithms">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -106,14 +107,14 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HW_04_09.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="HW_04_09.cpp" CONFIG_NAME="HW_04_09.cpp">
-      <option name="sourceFile" value="HW_04_09.cpp" />
+    <configuration name="linkedList01.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="linkedList01.cpp" CONFIG_NAME="linkedList01.cpp">
+      <option name="sourceFile" value="Buoi05/linkedList01.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="linkedList01.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="linkedList01.cpp" CONFIG_NAME="linkedList01.cpp">
-      <option name="sourceFile" value="Buoi05/linkedList01.cpp" />
+    <configuration name="linkedList02.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="linkedList02.cpp" CONFIG_NAME="linkedList02.cpp">
+      <option name="sourceFile" value="Buoi05/linkedList02.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -131,20 +132,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.linkedList02.cpp" />
       <item itemvalue="C/C++ File.25AD11008.cpp" />
       <item itemvalue="C/C++ File.linkedList01.cpp" />
       <item itemvalue="C/C++ File.linkedlist.cpp" />
       <item itemvalue="C/C++ File.main.cpp" />
-      <item itemvalue="C/C++ File.HW_04_09.cpp" />
       <item itemvalue="CMake Application.DataStructures_Algorithms" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.linkedList02.cpp" />
         <item itemvalue="C/C++ File.linkedList01.cpp" />
         <item itemvalue="C/C++ File.25AD11008.cpp" />
         <item itemvalue="C/C++ File.linkedlist.cpp" />
         <item itemvalue="C/C++ File.main.cpp" />
-        <item itemvalue="C/C++ File.HW_04_09.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +160,7 @@
       <workItem from="1788827947812" duration="387000" />
       <workItem from="1788932976945" duration="819000" />
       <workItem from="1788933809688" duration="5790000" />
+      <workItem from="1788941297518" duration="2347000" />
     </task>
     <servers />
   </component>
