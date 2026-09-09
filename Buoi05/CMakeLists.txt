@@ -3,4 +3,4 @@ project(Buoi05)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Buoi05 main.cpp)
+add_executable(Buoi05 linkedList01.cpp)
