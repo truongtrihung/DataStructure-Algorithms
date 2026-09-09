@@ -20,7 +20,6 @@ void merge(int a[], int l, int m, int r);
 
 
 int main() {
-    srand(time(0));
     int goc[MAX], temp[MAX];
     int n;
 
@@ -33,7 +32,8 @@ int main() {
     FILE *fp = fopen(path, "w");
     if (fp) {
         fprintf(fp, "--- MANG BAN DAU (%d phan tu) ---\n", n);
-        for (int i = 0; i < n; i++) fprintf(fp, "%d ", goc[i]);
+        for (int i = 0; i < n; i++)
+            fprintf(fp, "%d ", goc[i]);
         fprintf(fp, "\n\n--- KET QUA SAP XEP ---\n");
         fclose(fp);
     }
