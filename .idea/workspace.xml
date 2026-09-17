@@ -26,7 +26,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5165e399-f095-40da-ae26-8a2020c13273" name="Changes" comment="" />
+    <list default="true" id="5165e399-f095-40da-ae26-8a2020c13273" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Buoi06/ArrayBasedStack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +73,7 @@
     "C/C++ File.linkedList01.cpp.executor": "Run",
     "C/C++ File.linkedList02.cpp.executor": "Run",
     "C/C++ File.linkedlist.cpp.executor": "Run",
+    "C/C++ File.main.cpp (1).executor": "Run",
     "C/C++ File.main.cpp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -95,7 +99,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="C/C++ File.linkedList02.cpp">
+  <component name="RunManager" selected="C/C++ File.main.cpp (1)">
     <configuration name="DataStructures_Algorithms" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="DataStructures_Algorithms" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructures_Algorithms" RUN_TARGET_NAME="DataStructures_Algorithms">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -119,8 +123,8 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="linkedlist.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="linkedlist.cpp" CONFIG_NAME="linkedlist.cpp">
-      <option name="sourceFile" value="Buoi05/linkedlist.cpp" />
+    <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructures_Algorithms" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="Buoi06/main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -132,20 +136,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="C/C++ File.linkedList02.cpp" />
+      <item itemvalue="C/C++ File.main.cpp (1)" />
       <item itemvalue="C/C++ File.25AD11008.cpp" />
       <item itemvalue="C/C++ File.linkedList01.cpp" />
-      <item itemvalue="C/C++ File.linkedlist.cpp" />
+      <item itemvalue="C/C++ File.linkedList02.cpp" />
       <item itemvalue="C/C++ File.main.cpp" />
       <item itemvalue="CMake Application.DataStructures_Algorithms" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.main.cpp (1)" />
+        <item itemvalue="C/C++ File.main.cpp" />
         <item itemvalue="C/C++ File.linkedList02.cpp" />
         <item itemvalue="C/C++ File.linkedList01.cpp" />
         <item itemvalue="C/C++ File.25AD11008.cpp" />
-        <item itemvalue="C/C++ File.linkedlist.cpp" />
-        <item itemvalue="C/C++ File.main.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +165,9 @@
       <workItem from="1788932976945" duration="819000" />
       <workItem from="1788933809688" duration="5790000" />
       <workItem from="1788941297518" duration="2347000" />
+      <workItem from="1788943660790" duration="988000" />
+      <workItem from="1789656276976" duration="215000" />
+      <workItem from="1789656507881" duration="1297000" />
     </task>
     <servers />
   </component>
