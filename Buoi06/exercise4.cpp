@@ -9,7 +9,7 @@ struct STACK {
     int max_size = MAX_SIZE;
 };
 
-bool isEmpty(STACK &st){
+bool isEmpty(const STACK &st) {
     return st.size == 0;
 }
 
@@ -26,45 +26,45 @@ void push(STACK &st, int x) {
     st.size++;
 }
 
-int* pop(STACK &st) {
+int pop(STACK &st) {
     if (isEmpty(st)) {
         cout << "Stack is empty" << endl;
-        return NULL;
+        return -1;
     }
-
-    int* x = &st.arr[st.size - 1];
+    int val = st.arr[st.size - 1];
     st.size--;
-    return x;
+    return val;
 }
 
-int* top(STACK &st) {
-    // Kiểm tra rỗng
-    if (isEmpty(st)) {
-        cout << "Stack is empty" << endl;
-        return NULL;
+// Hàm chuyển đổi Thập phân -> Thập lục phân (Hexadecimal)
+void convertDec2Hex(int x, STACK &st) {
+    if (x == 0) {
+        cout << 0 << endl;
+        return;
     }
-    return &st.arr[st.size - 1];
-}
 
-void convertDec2Bin(int x, STACK &st) {
+    char hexChars[] = "0123456789ABCDEF";
+
     while (x > 0) {
-        push(st, x % 2);
-        x = x / 2;
+        push(st, x % 16);
+        x = x / 16;
     }
 
     while (!isEmpty(st)) {
-        cout << *pop(st);
+        int val = pop(st);
+        cout << hexChars[val];
     }
     cout << endl;
 }
 
 int main() {
     int x;
-    // tính nhị phân
     cout << "Enter x: ";
     cin >> x;
+
     STACK st;
-    convertDec2Bin(x, st);
+    cout << "Hexadecimal: ";
+    convertDec2Hex(x, st);
 
     return 0;
 }
