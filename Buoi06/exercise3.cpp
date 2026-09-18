@@ -26,13 +26,13 @@ void push(STACK &st, int x) {
     st.size++;
 }
 
-int pop(STACK &st) {
+int* pop(STACK &st) {
     if (isEmpty(st)) {
         cout << "Stack is empty" << endl;
-        return -1;
+        return NULL;
     }
 
-    int x = st.arr[st.size - 1];
+    int* x = &st.arr[st.size - 1];
     st.size--;
     return x;
 }
