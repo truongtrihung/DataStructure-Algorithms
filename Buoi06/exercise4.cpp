@@ -9,7 +9,7 @@ struct STACK {
     int max_size = MAX_SIZE;
 };
 
-bool isEmpty(const STACK &st) {
+bool isEmpty(STACK &st){
     return st.size == 0;
 }
 
@@ -26,45 +26,56 @@ void push(STACK &st, int x) {
     st.size++;
 }
 
-int pop(STACK &st) {
+int* pop(STACK &st) {
     if (isEmpty(st)) {
         cout << "Stack is empty" << endl;
-        return -1;
+        return NULL;
     }
-    int val = st.arr[st.size - 1];
+
+    int* x = &st.arr[st.size - 1];
     st.size--;
-    return val;
+    return x;
 }
 
-// Hàm chuyển đổi Thập phân -> Thập lục phân (Hexadecimal)
-void convertDec2Hex(int x, STACK &st) {
-    if (x == 0) {
-        cout << 0 << endl;
-        return;
+int* top(STACK &st) {
+    // Kiểm tra rỗng
+    if (isEmpty(st)) {
+        cout << "Stack is empty" << endl;
+        return NULL;
     }
+    return &st.arr[st.size - 1];
+}
 
-    char hexChars[] = "0123456789ABCDEF";
-
+void convertDec2Bin(int x, STACK &st) {
     while (x > 0) {
         push(st, x % 16);
         x = x / 16;
     }
 
     while (!isEmpty(st)) {
-        int val = pop(st);
-        cout << hexChars[val];
+        int x = *pop(st);
+        if (x >= 0 && x <= 9) {
+            cout << x << " ";
+        }
+        else {
+            if (x == 10) cout << "A";
+            if (x == 11) cout << "B";
+            if (x == 12) cout << "C";
+            if (x == 13) cout << "D";
+            if (x == 14) cout << "E";
+            if (x == 15) cout << "F";
+        }
     }
     cout << endl;
 }
 
 int main() {
     int x;
+    // tính nhị phân
     cout << "Enter x: ";
     cin >> x;
-
     STACK st;
-    cout << "Hexadecimal: ";
-    convertDec2Hex(x, st);
+    convertDec2Bin(x, st);
 
     return 0;
 }

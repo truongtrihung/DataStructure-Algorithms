@@ -24,11 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ba83f5-bfc0-4148-828f-b209a1414a0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercise4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise3" beforeDir="false" afterPath="$PROJECT_DIR$/exercise3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exercise3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise4" beforeDir="false" afterPath="$PROJECT_DIR$/exercise4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +64,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C/C++ File.exercise4.cpp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -124,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1789716984298</updated>
-      <workItem from="1789716985451" duration="625000" />
+      <workItem from="1789716985451" duration="948000" />
     </task>
     <servers />
   </component>
