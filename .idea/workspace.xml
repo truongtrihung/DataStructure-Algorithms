@@ -27,9 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165e399-f095-40da-ae26-8a2020c13273" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Buoi06/homework_11_09_(1).cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buoi06/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buoi07/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buoi06/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buoi06/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Buoi06/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buoi06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Buoi06/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +173,8 @@
       <workItem from="1789656507881" duration="1297000" />
       <workItem from="1789657817490" duration="178000" />
       <workItem from="1789658017976" duration="252000" />
+      <workItem from="1789719743915" duration="1214000" />
+      <workItem from="1790142914478" duration="614000" />
     </task>
     <servers />
   </component>
