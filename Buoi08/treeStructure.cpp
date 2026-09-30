@@ -3,39 +3,45 @@ using namespace std;
 
 struct TreeNode {
     char data;
-    TreeNode* fChild = NULL;
-    TreeNode* nSib = NULL;
+    TreeNode *fChild = NULL;
+    TreeNode *nSib = NULL;
 };
 
-TreeNode* newNode(char x);
-TreeNode* addChild(TreeNode *p, char x);
-TreeNode* addSib(TreeNode *p, char x);
-void preOrder(TreeNode *p);
-void inOrder(TreeNode *p);
-void postOrder(TreeNode *p);
-TreeNode* find(TreeNode *T, char x);
+TreeNode *newNode(char x);
 
-TreeNode* newNode(char x) {
+TreeNode *addChild(TreeNode *p, char x);
+
+TreeNode *addSib(TreeNode *p, char x);
+
+void preOrder(TreeNode *p);
+
+void inOrder(TreeNode *p);
+
+void postOrder(TreeNode *p);
+
+TreeNode *find(TreeNode *T, char x);
+
+TreeNode *newNode(char x) {
     TreeNode *q = new TreeNode();
-    q->data = x; q->fChild = q->nSib = NULL;
+    q->data = x;
+    q->fChild = q->nSib = NULL;
     return q;
 }
 
-TreeNode* addChild(TreeNode *p, char x) {
+TreeNode *addChild(TreeNode *p, char x) {
     TreeNode *q = newNode(x);
     if (p == NULL)
         p = q;
     else if (p->fChild != NULL) {
         q->nSib = p->fChild;
         p->fChild = q;
-    }
-    else {
+    } else {
         p->fChild = q;
     }
     return q;
 }
 
-TreeNode* addSib(TreeNode *p, char x) {
+TreeNode *addSib(TreeNode *p, char x) {
     TreeNode *q = newNode(x);
     if (p == NULL)
         p = q;
@@ -91,7 +97,7 @@ void postOrder(TreeNode *p) {
     }
 }
 
-TreeNode* find(TreeNode *T, char x) {
+TreeNode *find(TreeNode *T, char x) {
     if (T == NULL) return NULL;
     TreeNode *p;
     if (T->data == x) return T;
