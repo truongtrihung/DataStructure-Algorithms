@@ -8,17 +8,11 @@ struct TreeNode {
 };
 
 TreeNode *newNode(char x);
-
 TreeNode *addChild(TreeNode *p, char x);
-
 TreeNode *addSib(TreeNode *p, char x);
-
 void preOrder(TreeNode *p);
-
 void inOrder(TreeNode *p);
-
 void postOrder(TreeNode *p);
-
 TreeNode *find(TreeNode *T, char x);
 
 TreeNode *newNode(char x) {
@@ -111,33 +105,43 @@ TreeNode *find(TreeNode *T, char x) {
 }
 
 int main() {
+    // Tạo nút gốc A
     TreeNode *T = newNode('A');
-    TreeNode *A = T, *B, *C, *D, *E, *F, *G, *H, *I, *J, *K, *L, *M, *N, *P, *Q;
-    B = addChild(A, 'B');
-    C = addSib(B, 'C');
-    D = addSib(C, 'D');
-    E = addSib(D, 'E');
-    F = addSib(E, 'F');
-    G = addSib(F, 'G');
-    //
-    H = addChild(D, 'H');
-    //
-    I = addChild(E, 'I');
-    J = addSib(I, 'J');
-    P = addChild(J, 'P');
-    Q = addSib(P, 'Q');
-    //
-    K = addChild(F, 'K');
-    L = addSib(K, 'L');
-    M = addSib(L, 'M');
-    //
-    N = addChild(G, 'N');
+    TreeNode *A = T, *B, *D, *E, *G, *H, *I, *K, *M, *N, *P, *Q;
 
+    // Các con của A gồm B và D
+    B = addChild(A, 'B');
+    D = addSib(B, 'D');
+
+    // Các con của B gồm E và G
+    E = addChild(B, 'E');
+    G = addSib(E, 'G');
+
+    // Con của E là K
+    K = addChild(E, 'K');
+
+    // Con của G là M
+    M = addChild(G, 'M');
+
+    // Các con của D gồm H và I
+    H = addChild(D, 'H');
+    I = addSib(H, 'I');
+
+    // Con của H là N
+    N = addChild(H, 'N');
+
+    // Các con của I gồm P và Q
+    P = addChild(I, 'P');
+    Q = addSib(P, 'Q');
+
+    // Chạy các phép duyệt cây
     cout << "\n---PREORDER:";
     preOrder(T);
     cout << "\n---INORDER:";
     inOrder(T);
     cout << "\n---POSTORDER:";
     postOrder(T);
+
+    cout << endl;
     return 0;
 }
